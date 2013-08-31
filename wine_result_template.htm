@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC
+"-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="table_result.css" />
+<title>Winestore Database</title>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Wine Name</th>
+    <th>Grape Variety</th>
+    <th>Year</th>
+    <th>Winery</th>
+    <th>Region</th>
+    <th>Cost</th>
+    <th>Stock in Hand</th>
+    <th>Stock Sold</th>
+    <th>Total Sales Revenue</th>
+  </tr>
+
+  <!--   Generate Table for the wines -->
+  <!-- $BeginBlock row -->
+  <tr>
+    <td>${wineName}</td>
+    <td>${grapeVariety}</td>
+    <td>${year}</td>
+    <td>${wineryName}</td>
+    <td>${regionName}</td>
+    <td>${cost}</td>
+    <td>${stockOnHand}</td>
+    <td>${stockSold}</td>
+    <td>${salesRevenue}</td>
+  </tr>
+  <!-- $EndBlock row -->
+</table>
+
+</body>
+</html>

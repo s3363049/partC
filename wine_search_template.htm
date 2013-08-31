@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC
+"-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<head>
+<title>Wine's Search Results</title>
+</head>
+<body>
+<h1>Winestore Database</h1>
+		
+  <form action="${action}" method = "${method}">
+    <!-- $BeginBlock inputWineBlock -->	
+    ${inputLabel}<input name="${inputName}" type="${inputType}"><br>
+    <!-- $EndBlock inputWineBlock -->
+	
+    <!-- $BeginBlock optionRegionBlock -->
+    ${optionLabel}<select name="${selectName}">
+      <!-- $BeginBlock optionRegionInside -->
+      <option value="${optionId}">${optionName}</option>
+      <!-- $EndBlock optionRegionInside -->
+      </select><br>
+    <!-- $EndBlock optionRegionBlock -->
+
+    <!-- $BeginBlock optionGrapeBlock -->
+    ${optionLabel}<select name="${selectName}">
+      <!-- $BeginBlock optionGrapeInside -->
+      <option value="${optionId}">${optionName}</option>
+      <!-- $EndBlock optionGrapeInside -->
+      </select><br>
+    <!-- $EndBlock optionGrapeBlock -->
+     
+    <!-- $BeginBlock optionYearToBlock -->
+    ${optionLabel}<select name="${selectName}">
+      <!-- $BeginBlock optionYearToInside -->
+      <option value="${optionId}">${optionName}</option>
+      <!-- $EndBlock optionYearToInside -->
+      </select>
+    <!-- $EndBlock optionYearToBlock  -->
+
+    <!-- $BeginBlock optionYearFromBlock -->
+    ${optionLabel}<select name="${selectName}">
+      <!-- $BeginBlock optionYearFromInside -->
+      <option value="${optionId}">${optionName}</option>
+      <!-- $EndBlock optionYearFromInside -->
+      </select><br>
+    <!-- $EndBlock optionYearFromBlock  -->
+
+    <!-- $BeginBlock inputStockOrderBlock -->  
+    ${inputLabel}<input name="${inputName}" type="${inputType}"><br>
+    <!-- $EndBlock inputStockOrderBlock -->
+
+    <!-- $BeginBlock inputCostBlock -->  
+    ${inputLabel}<input name="${inputName}" type="${inputType}">
+    <!-- $EndBlock inputCostBlock -->
+
+    <br><br>
+    <input name="${submitName}" type = "${submitType}" value = "${submitValue}">
+    </form>
+	
+</body>
+</html>
